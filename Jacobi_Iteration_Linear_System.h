@@ -23,7 +23,7 @@ double *solveLinearSystem(double **A, double *b, double *x_start ,long anzZeilen
   x_alt = vector_neu(anzZeilen);
   vector_kopieren(x_alt, x_start, anzZeilen);
   
-// Anwenden des iterativen Verfahrens
+// Anwenden des iterativen Verfahrens auf unser System
 //---------------------------------------------------------------------------------------------------------------------
   while ((norm > epsilon) && (iterations < maxIterations)) {
     
